@@ -9,9 +9,14 @@ body {
   font-family: "Montserrat";
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: "Montserrat-oblique";
   font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+h4, h5, h6 {
+  font-family: "Montserrat-oblique";
   line-height: 1.5;
 }
 
@@ -139,47 +144,97 @@ p {
     color: #ff4c68;
 }
 
-/* Testimonials Section */
-
-#testimonials {
-  text-align: center;
-  background-color: #ef8172;
-  color: #fff;
+/* Contents Section */
+#contents-section1 {
+  position: relative;
+  z-index: 10;
+  padding: 5% 15%;
+  background-color: #f6f5f5;
 }
 
-.testimonial-text {
-  font-size: 3rem;
-  line-height: 1.5;
+.contents-image1 {
+  width: 90%;
+  animation-name: christmas-tree;
+  animation-duration: 0.9s;
 }
 
-.testimonials-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
+/* .contents-head1 {
+  animation-name: contents-head1;
+  animation-duration: 0.7s;
+} */
+
+@keyframes christmas-tree {
+  0% {left: -500px;}
+  100% {left: 0px;}
 }
 
-.carousel-item {
-  padding: 7% 15%;
+/* @keyframes contents-head1 {
+  0% {opacity: 0;
+    transform: scale(.3);
 }
+  50% {opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {transform: scale(.9);}
+  100% {transform: scale(1);} */
 
-/* Press Section */
+  #contents-section2 {
+    position: relative;
+    z-index: 10;
+    padding: 5% 15%;
+    background-color: #f6f5f5;
+  }
 
-#press {
-  background-color: #ef8172;
-  text-align: center;
-  padding-bottom: 3%;
-}
 
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
+.contents-image2 {
+  width: 90%;
+  animation-name: plan-project;
+  animation-duration: 0.9s;
 }
 
 /* Pricing Section */
 
 #pricing {
-  padding: 100px;
-  text-align: center;
+  position: relative;
+  z-index: 10;
+  padding: 5% 10%;
+  background-color: #e7eaf6;
+}
+
+.card {
+  border: none;
+}
+
+.card-header {
+  border: none;
+  background-color: #e7eaf6;
+}
+
+.pro-header, .pro-text, .pro-content, .pro-body, .active {
+  background-color: #f6f5f5 !important;
+}
+
+.card-body {
+  background-color: #e7eaf6;
+  padding-bottom: 130px;
+}
+
+.card .card-header {
+  padding-top: 100px;
+}
+
+.card .text-price {
+  font-size: 4.5rem;
+  padding-bottom: 50px;
+  line-height: 25px;
+}
+
+.card .text-content {
+  font-size: 0.87rem;
+  line-height: 30px;
+  padding-bottom: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .section-heading {
@@ -193,8 +248,31 @@ p {
 }
 
 .pricing-column {
-  padding: 3% 2%;
+  padding: 5% 1%;
 }
+
+.download-btn2 {
+  width: 50%;
+  border-radius: 40px;
+  padding: 15px 0px;
+  font-size: 0.8rem;
+  background-color: #1f3c88;
+  margin-left: 90px;
+}
+
+#press-brands {
+  position: relative;
+  z-index: 10;
+  padding: 5% 15%;
+  background-color: #f6f5f5;
+  text-align: center;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
 
 @media (max-width: 1028px) {
 
@@ -208,20 +286,9 @@ p {
   }
 }
 
-#cta {
-  background-color: #ff4c68;
-  color: white;
-  padding: 7% 15%;
-  text-align: center;
-}
-
-.cta-heading {
-  font-family: "Montserrat-Black";
-}
-
 #footer {
-  background-color: #fff;
-  padding: 7% 15%;
+  background-color: #e7eaf6;
+  padding: 3% 10%;
   text-align: center;
 }
 
