@@ -4,7 +4,7 @@
 
 // detect scroll up or download
 
-if($(".scroll-bar").length > 0) { // check if element exists
+if($(".scroll-bar").length > 10px) { // check if element exists
   var last_scroll_top = 0;
   $(window).on("scroll", function() {
     scroll_top = $(this).scrollTop();
